@@ -20,7 +20,6 @@ export class InfoPaginaService {
     this.http.get('assets/data/data-pagina.json').subscribe((respuesta: any) => {
         this.cargada = true;
         this.equipo = respuesta;
-        //console.log(respuesta);
       });
   }
 
@@ -28,7 +27,6 @@ export class InfoPaginaService {
   this.http.get<any[]>('https://angular-html-fe873-default-rtdb.firebaseio.com/equipo.json').subscribe(respuesta => {
         this.cargada = true;
         this.equipo = respuesta;
-        //console.log(this.equipo);
       });
   }
 }

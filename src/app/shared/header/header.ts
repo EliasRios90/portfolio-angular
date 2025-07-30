@@ -15,6 +15,5 @@ export class Header {
     if(termino.length < 1) return;
 
     this.router.navigate(['/search', termino]);
-    //console.log(termino);
   }
 }

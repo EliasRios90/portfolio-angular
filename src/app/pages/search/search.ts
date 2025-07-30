@@ -14,7 +14,7 @@ export class Search implements OnInit{
 
    ngOnInit(): void {
        this.route.params.subscribe(params => {
-        console.log(params['termino']) // 'termino' asi como esta en app.routes.ts
+        //console.log(params['termino']) // 'termino' asi como esta en app.routes.ts
         this.productosService.buscarProducto(params['termino']);
        });
    }
