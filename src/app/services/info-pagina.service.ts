@@ -17,9 +17,9 @@ export class InfoPaginaService {
   
   private cargarInfo(){
     // leer el archivo json
-    this.http.get('assets/data/data-pagina.json').subscribe((respuesta: any) => {
+    this.http.get('assets/data/data-pagina.json').subscribe((respuesta: InfoPagina) => {
         this.cargada = true;
-        this.equipo = respuesta;
+        this.info = respuesta;
       });
   }
 
