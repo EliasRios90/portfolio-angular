@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   selector: 'app-about',
   imports: [CommonModule],
   templateUrl: './about.html',
-  styleUrl: './about.scss'
+  styleUrls: ['./about.scss', '../../app.scss']
 })
 export class About {
   constructor(public _service: InfoPaginaService){}
